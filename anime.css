@@ -73,16 +73,10 @@
   font-size: 18px;
   line-height: 1.7;
   margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-/* responsive for smaller screens */
-@media (max-width: 800px){
-  #favAnime li{
-    grid-template-columns: 1fr;
-  }
-
-  #favAnime img{
-    width: 100%;
-    height: auto;
-  }
+#favAnime li:hover p{
+  opacity: 1;
 }
