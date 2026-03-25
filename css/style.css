@@ -1,22 +1,24 @@
 body{
   background: white;
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* top navigation bar */
 #top-bar{
   width: 100%;
   background-color: #a3d5ff;
-  padding: 15px 0;
+  padding: 1rem 0;
 }
 
+/*shared page box*/
 #main-page{
   width: 90%;
-  margin: 20px auto;
+  margin: 1.25rem auto;
   background: #dff2ff;
-  border-radius: 20px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  padding: 30px;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.375rem 1.125rem rgba(0,0,0,0.15);
+  padding: 1.875rem;
 }
 
 /* center the icons */
@@ -24,14 +26,14 @@ body{
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 2.5rem;
   margin: 0;
   padding: 0;
 }
 
 /* icon style */
 #main-list i{
-  font-size: 22px;
+  font-size: 1.375rem;
   color: rgb(255, 255, 255);
   transition: 0.3s;
 }
@@ -42,249 +44,230 @@ body{
   color: #000000;
 }
 
-/*Home page style*/
-/* main content box */
-#main-page,
-#interest,
-#about-me,
-#fact,
-#music{
-  width: 90%;
-  margin: 20px auto;
-  background: #dff2ff;
-  border-radius: 20px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  padding: 30px;
-}
+/* ===================== */
+/* HOME PAGE STYLE       */
+/* ===================== */
 
 /* welcome section */
-#welcome{
+.home-page #welcome{
   position: relative;
   text-align: center;
   margin-top: 40px;
 }
 
 /* center content */
-.welcome-center{
+.home-page .welcome-center{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* snoopy image under text */
-.snoopy{
+.home-page .snoopy{
   width: 250px;
   margin-top: 15px;
 }
 
 /* side characters */
-.character.left{
+.home-page .character.left{
   position: absolute;
-  left: 60px;
+  left: 3.75px;
   top: 50%;
   transform: translateY(-50%);
-  width: 120px;
+  width: 7.5rem;
 }
 
-h1{
+.home-page #welcome h1{
   font-family: 'Chewy', cursive;
   font-size: 42px;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
-#about-me,
-#interest,
-#fact,
-#music{
+.home-page #about-me,
+.home-page #interest,
+.home-page #fact,
+.home-page #music{
   font-family: 'Chewy', cursive;
-  border: 3px solid #75bfec;
+  border: 0.1875rem solid #75bfec;
   background-color: #a3d5ff;
-  border-radius: 18px;
-  padding: 25px;
-  margin: 20px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-radius: 1.125rem;
+  padding: 1.5625rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.15);
 }
 
-#about-me p,
-#travel p,
-#fact p{
+.home-page #about-me p,
+.home-page #travel p,
+.home-page #fact p{
   font-family: 'Comic Neue', cursive;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.7;
 }
 
-#about-me h2,
-#interest h2,
-#fact h2,
-#music h2{
-  font-size: 32px;
-  margin-bottom: 10px;
+.home-page #about-me h2,
+.home-page #interest h2,
+.home-page #fact h2,
+.home-page #music h2{
+  font-size: 2rem;
+  margin-bottom: 0.625rem;
 }
 
-#travel h3{
-  font-size: 26px;
-  margin-bottom: 10px;
+.home-page #travel h3{
+  font-size: 1.625rem;
+  margin-bottom: 0.625rem;
 }
 
-/* thailand image layout */
-.thailand-pic{
+/* thailand and cali image layout */
+.home-page .thailand-pic,
+.home-page .cali-pic{
   display: flex;
-  gap: 15px;
+  gap: 0.9375rem;
   justify-content: center;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
-.thailand-pic img{
+.home-page .thailand-pic img,
+.home-page .cali-pic img {
   width: 23%;
-  height: 200px;
+  height: 12.5rem;
   object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-radius: 0.9375rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
 
-.thailand-pic img:hover{
+.home-page .thailand-pic img:hover,
+.home-page .cali-pic img:hover{
   transform: scale(1.05);
 }
 
-/* california image layout */
-.cali-pic{
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin: 20px 0;
+/* ===================== */
+/* RESUME PAGE STYLE     */
+/* ===================== */
+
+.resume-page #main-page{
+  width: 60rem;
 }
 
-.cali-pic img{
-  width: 23%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
-
-.cali-pic img:hover{
-  transform: scale(1.05);
-}
-
-/*Resume Page Style*/
 /* resume font style */
-#content{
+.resume-page #content{
   font-family: 'Open Sans', sans-serif;
 }
 
-#content h1{
+.resume-page #content h1{
   font-family: 'Poppins', sans-serif;
-  font-size: 38px;
+  font-size: 2.375rem;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
-#content h2{
+.resume-page #content h2{
   font-family: 'Poppins', sans-serif;
-  font-size: 26px;
-  margin-top: 20px;
-  border-bottom: 2px solid #d9d9d9;
-  padding-bottom: 5px;
+  font-size: 1.625rem;
+  margin-top: 1,25rem;
+  border-bottom: 0.125rem solid #d9d9d9;
+  padding-bottom: 0.3125rem;
 }
 
-#content h3{
+.resume-page #content h3{
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
-#content h4{
-  font-size: 18px;
-  margin-top: 10px;
+.resume-page #content h4{
+  font-size: 1.125rem;
+  margin-top: 0.625rem;
 }
 
-#content p,
-#content li{
-  font-size: 16px;
+.resume-page #content p,
+.resume-page #content li{
+  font-size: 1rem;
   line-height: 1.6;
 }
 
+/* ===================== */
+/* ANIME PAGE STYLE      */
+/* ===================== */
+
 /*Anime Page Style*/
-#favAnime{
+.anime-page #favAnime{
   width: 90%;
-  margin: 20px auto;
+  margin: 1.25rem auto;
   background-color: #dff2ff;
-  border: 3px solid #75bfec;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border: 0.1875rem solid #75bfec;
+  border-radius: 1.25rem;
+  padding: 1.875rem;
+  box-shadow: 0 0.375rem 1.125rem rgba(0,0,0,0.15);
 }
 
-#favAnime h1{
+.anime-page #favAnime h1{
   font-family: 'Chewy', cursive;
-  font-size: 42px;
+  font-size: 2.625rem;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
-#favAnime > p{
+.anime-page #favAnime > p{
   font-family: 'Comic Neue', cursive;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.7;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
-#favAnime ol{
-  padding-left: 30px;
+.anime-page #favAnime ol{
+  padding-left: 1.875rem;
 }
 
 /* each anime card */
-#favAnime li{
+.anime-page #favAnime li{
   background-color: #a3d5ff;
-  border: 3px solid #75bfec;
-  border-radius: 18px;
-  padding: 20px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border: 0.1875rem solid #75bfec;
+  border-radius: 1.125rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5625rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.15);
 
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 20px;
+  grid-template-columns: 20rem 1fr;
+  gap: 1.25rem;
   align-items: start;
 }
 
 /* title goes across the whole card */
-#favAnime h2{
+.anime-page #favAnime h2{
   grid-column: 1 / -1;
   font-family: 'Chewy', cursive;
-  font-size: 30px;
+  font-size: 1.875rem;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 /* image */
-#favAnime img{
-  width: 320px;
+.anime-page #favAnime img{
+  width: 20rem;
   max-width: 100%;
-  height: 220px;
+  height: 13.75rem;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   display: block;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
 
-#favAnime img:hover{
+.anime-page #favAnime img:hover{
   transform: scale(1.03);
 }
 
 /* description */
-#favAnime li p{
+.anime-page #favAnime li p{
   font-family: 'Comic Neue', cursive;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.7;
   margin: 0;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-#favAnime li:hover p{
+.anime-page #favAnime li:hover p{
   opacity: 1;
 }
