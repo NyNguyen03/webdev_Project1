@@ -1,3 +1,8 @@
+/* ===================== */
+/* SAME STYLE FOR ALL PAGES        */
+/* ===================== */
+
+/*Set default backgroound and font for whole website*/
 body{
   background: white;
   margin: 0;
@@ -77,12 +82,14 @@ body{
   width: 7.5rem;
 }
 
+/*Homepage main title*/
 .home-page #welcome h1{
   font-family: 'Chewy', cursive;
   font-size: 42px;
   letter-spacing: 0.125rem;
 }
 
+/*Section boxes on homepage*/
 .home-page #about-me,
 .home-page #interest,
 .home-page #fact,
@@ -95,6 +102,7 @@ body{
   box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.15);
 }
 
+/*Paragraph styling on homepage*/
 .home-page #about-me p,
 .home-page #travel p,
 .home-page #fact p{
@@ -103,6 +111,7 @@ body{
   line-height: 1.7;
 }
 
+/*Section titles*/
 .home-page #about-me h2,
 .home-page #interest h2,
 .home-page #fact h2,
@@ -111,6 +120,7 @@ body{
   margin-bottom: 0.625rem;
 }
 
+/*Travel section subtitle*/
 .home-page #travel h3{
   font-size: 1.625rem;
   margin-bottom: 0.625rem;
@@ -125,6 +135,7 @@ body{
   margin: 1.25rem 0;
 }
 
+/*Image styling*/
 .home-page .thailand-pic img,
 .home-page .cali-pic img {
   width: 23%;
@@ -135,6 +146,7 @@ body{
   transition: transform 0.3s ease;
 }
 
+/* Hover zoom effect on images */
 .home-page .thailand-pic img:hover,
 .home-page .cali-pic img:hover{
   transform: scale(1.05);
@@ -144,6 +156,7 @@ body{
 /* RESUME PAGE STYLE     */
 /* ===================== */
 
+/* Fixed width layout for resume page */
 .resume-page #main-page{
   width: 60rem;
 }
@@ -153,6 +166,7 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+/* Resume title */
 .resume-page #content h1{
   font-family: 'Poppins', sans-serif;
   font-size: 2.375rem;
@@ -160,6 +174,7 @@ body{
   margin-bottom: 1.5625rem;
 }
 
+/* Resume section headings */
 .resume-page #content h2{
   font-family: 'Poppins', sans-serif;
   font-size: 1.625rem;
@@ -168,16 +183,19 @@ body{
   padding-bottom: 0.3125rem;
 }
 
+/* Subheadings */
 .resume-page #content h3{
   font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
 }
 
+/* Smaller headings */
 .resume-page #content h4{
   font-size: 1.125rem;
   margin-top: 0.625rem;
 }
 
+/* Paragraph and list styling */
 .resume-page #content p,
 .resume-page #content li{
   font-size: 1rem;
@@ -188,7 +206,7 @@ body{
 /* ANIME PAGE STYLE      */
 /* ===================== */
 
-/*Anime Page Style*/
+/*Anime section container*/
 .anime-page #favAnime{
   width: 90%;
   margin: 1.25rem auto;
@@ -199,6 +217,7 @@ body{
   box-shadow: 0 0.375rem 1.125rem rgba(0,0,0,0.15);
 }
 
+/* Anime page title */
 .anime-page #favAnime h1{
   font-family: 'Chewy', cursive;
   font-size: 2.625rem;
@@ -206,6 +225,7 @@ body{
   margin-bottom: 1.25rem;
 }
 
+/* Description text */
 .anime-page #favAnime > p{
   font-family: 'Comic Neue', cursive;
   font-size: 1.25rem;
@@ -214,11 +234,12 @@ body{
   margin-bottom: 1.875rem;
 }
 
+/* Anime list spacing */
 .anime-page #favAnime ol{
   padding-left: 1.875rem;
 }
 
-/* each anime card */
+/* Anime card layout */
 .anime-page #favAnime li{
   background-color: #a3d5ff;
   border: 0.1875rem solid #75bfec;
@@ -233,7 +254,7 @@ body{
   align-items: start;
 }
 
-/* title goes across the whole card */
+/* Anime title inside card */
 .anime-page #favAnime h2{
   grid-column: 1 / -1;
   font-family: 'Chewy', cursive;
@@ -242,7 +263,7 @@ body{
   margin-bottom: 0.625rem;
 }
 
-/* image */
+/* Anime image styling */
 .anime-page #favAnime img{
   width: 20rem;
   max-width: 100%;
@@ -254,11 +275,12 @@ body{
   transition: transform 0.3s ease;
 }
 
+/* Hover effect on images */
 .anime-page #favAnime img:hover{
   transform: scale(1.03);
 }
 
-/* description */
+/* Hidden description until hover */
 .anime-page #favAnime li p{
   font-family: 'Comic Neue', cursive;
   font-size: 1.125rem;
@@ -268,6 +290,7 @@ body{
   transition: opacity 0.3s ease;
 }
 
+/* Show description on hover */
 .anime-page #favAnime li:hover p{
   opacity: 1;
 }
