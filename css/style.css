@@ -6,14 +6,14 @@
 body{
   background: white;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* top navigation bar */
 #top-bar{
   width: 100%;
   background-color: #a3d5ff;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 /*shared page box*/
@@ -29,12 +29,22 @@ body{
 /* center the icons */
 #main-list ul{
   list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
+  overflow: hidden;
   margin: 0;
   padding: 0;
 }
+
+#main-list ul li{
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+#main-list ul li a{
+  display: block;
+  padding: 4px 0;
+}
+
 
 /* icon style */
 #main-list i{
@@ -62,31 +72,38 @@ body{
 
 /* center content */
 .home-page .welcome-center{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  overflow: hidden;
 }
 
 /* snoopy image under text */
 .home-page .snoopy{
-  width: 250px;
-  margin-top: 15px;
+  position: absolute;
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: contain;
 }
 
-/* side characters */
-.home-page .character.left{
-  position: absolute;
-  left: 3.75px;
+/* LEFT snoopy */
+.home-page .snoopy.left{
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 7.5rem;
 }
+
+/* RIGHT snoopy */
+.home-page .snoopy.right{
+  right: 10px; 
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
 
 /*Homepage main title*/
 .home-page #welcome h1{
-  font-family: 'Chewy', cursive;
+  font-family: 'Chewy','Comic Sans MS', cursive;
   font-size: 42px;
   letter-spacing: 0.125rem;
+  margin-bottom: 25px;
 }
 
 /*Section boxes on homepage*/
@@ -94,7 +111,7 @@ body{
 .home-page #interest,
 .home-page #fact,
 .home-page #music{
-  font-family: 'Chewy', cursive;
+  margin-bottom: 0.625rem;
   border: 0.1875rem solid #75bfec;
   background-color: #a3d5ff;
   border-radius: 1.125rem;
@@ -106,9 +123,10 @@ body{
 .home-page #about-me p,
 .home-page #travel p,
 .home-page #fact p{
-  font-family: 'Comic Neue', cursive;
-  font-size: 1.125rem;
-  line-height: 1.7;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #111;
 }
 
 /*Section titles*/
@@ -116,7 +134,9 @@ body{
 .home-page #interest h2,
 .home-page #fact h2,
 .home-page #music h2{
-  font-size: 2rem;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
   margin-bottom: 0.625rem;
 }
 
@@ -163,12 +183,13 @@ body{
 
 /* resume font style */
 .resume-page #content{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
+
 
 /* Resume title */
 .resume-page #content h1{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 2.375rem;
   text-align: center;
   margin-bottom: 1.5625rem;
@@ -176,16 +197,16 @@ body{
 
 /* Resume section headings */
 .resume-page #content h2{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 1.625rem;
-  margin-top: 1,25rem;
+  margin-top: 1.25rem;
   border-bottom: 0.125rem solid #d9d9d9;
   padding-bottom: 0.3125rem;
 }
 
 /* Subheadings */
 .resume-page #content h3{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
 }
 
@@ -219,7 +240,7 @@ body{
 
 /* Anime page title */
 .anime-page #favAnime h1{
-  font-family: 'Chewy', cursive;
+  font-family: 'Chewy', 'Comic Sans MS', cursive;
   font-size: 2.625rem;
   text-align: center;
   margin-bottom: 1.25rem;
@@ -227,7 +248,7 @@ body{
 
 /* Description text */
 .anime-page #favAnime > p{
-  font-family: 'Comic Neue', cursive;
+  font-family: 'Comic Neue', Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   line-height: 1.7;
   text-align: center;
@@ -257,7 +278,7 @@ body{
 /* Anime title inside card */
 .anime-page #favAnime h2{
   grid-column: 1 / -1;
-  font-family: 'Chewy', cursive;
+  font-family: 'Chewy', 'Comic Sans MS', cursive;
   font-size: 1.875rem;
   margin-top: 0;
   margin-bottom: 0.625rem;
@@ -282,7 +303,7 @@ body{
 
 /* Hidden description until hover */
 .anime-page #favAnime li p{
-  font-family: 'Comic Neue', cursive;
+  font-family: 'Comic Neue', Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
   line-height: 1.7;
   margin: 0;
