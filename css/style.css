@@ -315,3 +315,14 @@ body{
 .anime-page #favAnime li:hover p{
   opacity: 1;
 }
+
+/* ===================== */
+/* GOOGLE MAP PAGE STYLE */
+/* ===================== */
+
+.map-page #map{
+  width: 90%;
+  height: 500px;
+  margin: 20px auto;
+  border: 2px solid #000;
+}
