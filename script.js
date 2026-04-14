@@ -5,4 +5,14 @@ function initMap() {
     center: place,
     zoom: 12
   });
+
+  const marker = new google.maps.Marker({
+    position: myplace,
+    map: map,
+    title: "Chicago"
+  });
+
+  
+
+
 }
