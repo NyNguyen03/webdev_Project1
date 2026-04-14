@@ -17,4 +17,13 @@ function initMap() {
   marker.addlistener("click", function() {
     infoWindow.open(map,marker);
   });
+
+  var button = document.getElementById("recenter-btn");
+
+  if(button){
+    button.onclick = function(){
+      map.setCenter(myPlace);
+      map.setZoom(12);
+    }
+  }
 }
