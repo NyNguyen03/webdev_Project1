@@ -32,3 +32,56 @@ function initMap() {
     }
   }
 }
+
+var images = [
+  "images/img_3019.jpeg",
+  "images/img_3049.jpeg",
+  "images/img_3021.jpeg",
+  "images/img_3127.jpeg",
+  "images/img_6222.jpg",
+  "images/img_6468.jpg",
+  "images/p1010002.jpg",
+  "images/p1010010.jpg"
+];
+
+var captions = [
+  "Thailand - Nong Nooch Tropical Garden",
+  "Thailand - Nong Nooch Tropical Garden",
+  "Thailand - Nong Nooch Tropical Garden",
+  "Thailand - The Ancient City",
+  "California - Santa Monica Sunset",
+  "California - San Diego Park",
+  "California - Hollywood Sign",
+  "California - Beverly Hills"
+];
+
+var index = 0;
+
+function showImage() {
+  var img = document.getElementById("slider-image");
+  var caption = document.getElementById("slider-caption");
+
+  if (img) {
+    img.src = images[index];
+  }
+
+  if (caption) {
+    caption.textContent = captions[index];
+  }
+}
+
+function nextImage() {
+  index++;
+  if (index >= images.length) {
+    index = 0;
+  }
+  showImage();
+}
+
+function prevImage() {
+  index--;
+  if (index < 0) {
+    index = images.length - 1;
+  }
+  showImage();
+}
