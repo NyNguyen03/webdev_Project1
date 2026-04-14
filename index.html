@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Rubik:wght@600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src ="script.js" defer></script>
 </head>
 
 <body class="home-page">
@@ -51,8 +52,22 @@
 
         <section id="travel">
           <h3>Traveling</h3>
-          <p>Outside of academics, I enjoy traveling throughout the United States and different countries.</p>
+          <p>Outside of academics, I enjoy traveling throughout the United States and different countries.
+             Here are some of my favorite memories from Thailand and California
+          </p>
 
+          <div class="slider">
+            <img id="slider-image" src="images/img_3019.jpeg" alt="Travel Memory">
+
+            <div class="slider-buttons">
+              <button onclick="prevImage()">Prev</button>
+              <button onclick="nextImage()">Next</button>
+            </div>
+          </div>
+
+          <p id="slider-caption">Thailand - Nong Nooch Tropical Garden</p>
+        </section>
+        <!--
           <div class="thailand-pic">
             <img src="images/img_3019.jpeg" alt="Nong Nooch Garden Pattaya in Thailand">
             <img src="images/img_3049.jpeg" alt="Nong Nooch Garden Pattaya in Thailand">
@@ -77,7 +92,7 @@
             In 2025, I traveled to California and visited several places including Santa Monica, SanDiego, and Beverly Hills.
             My favorie part was seeing the ocean at sunset and exploring different neighborhoods. These photos captures a few
             moments from that trip.
-          </p>
+          </p> -->
         </section>
       </section>
 
