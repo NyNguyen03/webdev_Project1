@@ -146,30 +146,53 @@ body{
   margin-bottom: 0.625rem;
 }
 
-/* thailand and cali image layout */
-.home-page .thailand-pic,
-.home-page .cali-pic{
-  display: flex;
-  gap: 0.9375rem;
-  justify-content: center;
-  margin: 1.25rem 0;
+/* Travel slider */
+.home-page .slider {
+  text-align: center;
+  margin: 1.25rem auto;
+  width: 100%;
 }
 
-/*Image styling*/
-.home-page .thailand-pic img,
-.home-page .cali-pic img {
-  width: 23%;
-  height: 12.5rem;
-  object-fit: cover;
+.home-page .slider img {
+  width: 100%;
+  max-width: 48rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 0.9375rem;
   box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
 
-/* Hover zoom effect on images */
-.home-page .thailand-pic img:hover,
-.home-page .cali-pic img:hover{
-  transform: scale(1.05);
+.home-page .slider img:hover {
+  transform: scale(1.02);
+}
+
+.home-page .slider-buttons {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.home-page .slider-buttons button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #75bfec;
+  color: white;
+  cursor: pointer;
+}
+
+.home-page .slider-buttons button:hover {
+  background-color: #4ea7dd;
+}
+
+.home-page #slider-caption {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+  text-align: center;
 }
 
 /* ===================== */
