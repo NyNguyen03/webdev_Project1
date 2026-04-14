@@ -1,18 +1,20 @@
 function initMap() {
-  const place = { lat: 41.8781, lng: -87.6298 };
+  var place = { lat: 41.8781, lng: -87.6298 };
 
-  const map = new google.maps.Map(document.getElementById("map"), {
+  var map = new google.maps.Map(document.getElementById("map"), {
     center: place,
     zoom: 12
   });
 
-  const marker = new google.maps.Marker({
+  var marker = new google.maps.Marker({
     position: myplace,
     map: map,
-    title: "Chicago"
   });
 
-  
-
-
+  var infoWindow = new google.maps.InfoWindow({
+    content:"This is Chicago, where I live in"
+  });
+  marker.addlistener("click", function() {
+    infoWindow.open(map,marker);
+  });
 }
