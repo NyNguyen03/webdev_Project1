@@ -7,22 +7,22 @@ function initMap() {
   });
 
   var marker = new google.maps.Marker({
-    position: myplace,
+    position: place,
     map: map,
   });
 
   var infoWindow = new google.maps.InfoWindow({
     content:"This is Chicago, where I live in"
   });
-  marker.addlistener("click", function() {
-    infoWindow.open(map,marker);
+  marker.addListener("click", function() {
+    infoWindow.open(map, marker);
   });
 
   var button = document.getElementById("recenter-btn");
 
   if(button){
     button.onclick = function(){
-      map.setCenter(myPlace);
+      map.setCenter(place);
       map.setZoom(12);
     }
   }
